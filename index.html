@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/styles.css" />
+    <title></title>
+  </head>
+
+  <body>
+    <h1>Quiz</h1>
+    <div class="highscores">
+      <button class="btn__highscores">high scores</button>
+      <ul class="highscores__list hidden"></ul>
+    </div>
+    <div class="countdown__timer hidden"></div>
+
+    <form id="filter" action="#">
+      <div class="filter__container__category">
+        <h2>Categories</h2>
+        <select name="category"></select>
+      </div>
+
+      <div class="filter__container__difficulty">
+        <h2>Difficulties</h2>
+        <select name="difficulty"></select>
+      </div>
+
+      <div class="filter__container__slider">
+        <h2><span class="filter__slider__amount"></span> Questions</h2>
+        <input type="range" name="slider" min="1" max="20" value="20" />
+      </div>
+    </form>
+
+    <div id="questions" class="hidden">
+      <button id="questions__btn" class="hidden">next</button>
+      <button id="quit__quiz" class="hidden">Quit Quiz</button>
+
+      <div class="time-up hidden">
+        <p class="time-up__message">
+          You can no longer answer, proceed to the next question.
+        </p>
+      </div>
+    </div>
+
+    <div id="end" class="hidden">
+      <h1 id="finalscore">0</h1>
+      <form action="#" class="finalscore_form">
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Username"
+        />
+        <button type="submit" class="btn__save disable">Save</button>
+        <button type="submit" class="btn__home">Home</button>
+      </form>
+
+      <ul class="overview"></ul>
+    </div>
+
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>

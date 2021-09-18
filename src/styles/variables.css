@@ -1,0 +1,14 @@
+:root {
+  --body-background-color: #121212;
+  --primary-text-color: #FFF;
+  --secondary-background-color: #332940;
+  --wrong-answer-color: rgb(240, 24, 24);
+  --correct-answer-color: rgb(66, 182, 20);
+  --background-color-question-storage: rgb(88, 55, 113);
+  --color-black: black;
+  --background-color-overview: rgba(255, 255, 255, 0.748);
+  --background-color-finalscore: cadetblue;
+  --background-color-timeup: rgb(206, 67, 67);
+  --white: white;
+  --answers-hover : rgb(110, 110, 110);
+}
